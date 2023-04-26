@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>100 "I love you" messages</title>
+	<script>
+		function showLove() {
+			var loveDiv = document.getElementById("loveDiv");
+			var colors = ["red", "orange", "yellow", "green", "blue", "purple", "pink"];
+			for (var i = 0; i < 100; i++) {
+				var loveMsg = document.createElement("p");
+				loveMsg.textContent = "I love you divya ennoda chella pondatiii";
+				loveMsg.style.color = colors[Math.floor(Math.random() * colors.length)];
+				loveDiv.appendChild(loveMsg);
+			}
+		}
+	</script>
+</head>
+<body>
+	<button onclick="showLove()">Touch me </button>
+	<div id="loveDiv"></div>
+</body>
+</html>
